@@ -140,6 +140,9 @@ namespace Quiz_Game
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormOptions";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormOptions_FormClosing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormOptions_FormClosed);
+            this.Load += new System.EventHandler(this.FormOptions_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

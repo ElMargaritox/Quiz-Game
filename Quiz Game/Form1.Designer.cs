@@ -44,12 +44,26 @@ namespace Quiz_Game
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.lblProgreso = new System.Windows.Forms.Label();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.label1 = new System.Windows.Forms.Label();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.button1 = new System.Windows.Forms.Button();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel4.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblTitle
@@ -74,7 +88,7 @@ namespace Quiz_Game
             this.BtnJugar.BackColor = System.Drawing.SystemColors.Control;
             this.BtnJugar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnJugar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnJugar.Location = new System.Drawing.Point(182, 124);
+            this.BtnJugar.Location = new System.Drawing.Point(170, 34);
             this.BtnJugar.Name = "BtnJugar";
             this.BtnJugar.Size = new System.Drawing.Size(135, 34);
             this.BtnJugar.TabIndex = 1;
@@ -89,7 +103,7 @@ namespace Quiz_Game
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.Font = new System.Drawing.Font("Book Antiqua", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel1.LinkColor = System.Drawing.Color.Black;
-            this.linkLabel1.Location = new System.Drawing.Point(73, 311);
+            this.linkLabel1.Location = new System.Drawing.Point(71, 229);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(105, 21);
             this.linkLabel1.TabIndex = 3;
@@ -102,7 +116,7 @@ namespace Quiz_Game
             this.btnOptions.BackColor = System.Drawing.SystemColors.Control;
             this.btnOptions.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOptions.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOptions.Location = new System.Drawing.Point(182, 164);
+            this.btnOptions.Location = new System.Drawing.Point(170, 74);
             this.btnOptions.Name = "btnOptions";
             this.btnOptions.Size = new System.Drawing.Size(135, 34);
             this.btnOptions.TabIndex = 4;
@@ -117,7 +131,7 @@ namespace Quiz_Game
             this.btnExit.BackColor = System.Drawing.SystemColors.Control;
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.Location = new System.Drawing.Point(182, 204);
+            this.btnExit.Location = new System.Drawing.Point(170, 114);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(135, 34);
             this.btnExit.TabIndex = 5;
@@ -139,23 +153,23 @@ namespace Quiz_Game
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.panel2.Location = new System.Drawing.Point(-1, 148);
+            this.panel2.Location = new System.Drawing.Point(-42, 58);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(117, 10);
+            this.panel2.Size = new System.Drawing.Size(166, 10);
             this.panel2.TabIndex = 7;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.panel3.Location = new System.Drawing.Point(405, 213);
+            this.panel3.Location = new System.Drawing.Point(355, 114);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(117, 10);
+            this.panel3.Size = new System.Drawing.Size(189, 11);
             this.panel3.TabIndex = 8;
             // 
             // pictureBox5
             // 
             this.pictureBox5.Image = global::Quiz_Game.Properties.Resources.cerrar_sesion;
-            this.pictureBox5.Location = new System.Drawing.Point(144, 204);
+            this.pictureBox5.Location = new System.Drawing.Point(130, 115);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(34, 33);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -166,7 +180,7 @@ namespace Quiz_Game
             // pictureBox4
             // 
             this.pictureBox4.Image = global::Quiz_Game.Properties.Resources.configuraciones;
-            this.pictureBox4.Location = new System.Drawing.Point(144, 163);
+            this.pictureBox4.Location = new System.Drawing.Point(130, 75);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(34, 33);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -177,7 +191,7 @@ namespace Quiz_Game
             // pictureBox3
             // 
             this.pictureBox3.Image = global::Quiz_Game.Properties.Resources.boton_de_play;
-            this.pictureBox3.Location = new System.Drawing.Point(142, 124);
+            this.pictureBox3.Location = new System.Drawing.Point(130, 35);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(34, 33);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -191,7 +205,7 @@ namespace Quiz_Game
             this.pictureBox1.BackgroundImage = global::Quiz_Game.Properties.Resources.github;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Image = global::Quiz_Game.Properties.Resources.github;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 299);
+            this.pictureBox1.Location = new System.Drawing.Point(10, 220);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(55, 44);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -201,30 +215,135 @@ namespace Quiz_Game
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Quiz_Game.Properties.Resources._2;
-            this.pictureBox2.Location = new System.Drawing.Point(184, 65);
+            this.pictureBox2.Location = new System.Drawing.Point(200, -43);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(960, 480);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox2.TabIndex = 9;
             this.pictureBox2.TabStop = false;
             // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.BtnJugar);
+            this.panel4.Controls.Add(this.panel2);
+            this.panel4.Controls.Add(this.pictureBox1);
+            this.panel4.Controls.Add(this.linkLabel1);
+            this.panel4.Controls.Add(this.panel3);
+            this.panel4.Controls.Add(this.pictureBox5);
+            this.panel4.Controls.Add(this.pictureBox4);
+            this.panel4.Controls.Add(this.pictureBox3);
+            this.panel4.Controls.Add(this.btnOptions);
+            this.panel4.Controls.Add(this.btnExit);
+            this.panel4.Controls.Add(this.pictureBox2);
+            this.panel4.Location = new System.Drawing.Point(-1, 79);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(523, 275);
+            this.panel4.TabIndex = 13;
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.lblProgreso);
+            this.panel5.Controls.Add(this.progressBar1);
+            this.panel5.Location = new System.Drawing.Point(548, 340);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(517, 229);
+            this.panel5.TabIndex = 13;
+            // 
+            // lblProgreso
+            // 
+            this.lblProgreso.AutoSize = true;
+            this.lblProgreso.Location = new System.Drawing.Point(239, 100);
+            this.lblProgreso.Name = "lblProgreso";
+            this.lblProgreso.Size = new System.Drawing.Size(35, 13);
+            this.lblProgreso.TabIndex = 1;
+            this.lblProgreso.Text = "label1";
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(10, 70);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(492, 23);
+            this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.progressBar1.TabIndex = 0;
+            // 
+            // timer2
+            // 
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(198, 18);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "label1";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(24, 105);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(85, 17);
+            this.radioButton1.TabIndex = 1;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "radioButton1";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(24, 82);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(85, 17);
+            this.radioButton2.TabIndex = 2;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "radioButton2";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Location = new System.Drawing.Point(24, 54);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(85, 17);
+            this.radioButton3.TabIndex = 3;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "radioButton3";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(221, 167);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(140, 30);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.label1);
+            this.panel6.Controls.Add(this.button1);
+            this.panel6.Controls.Add(this.radioButton3);
+            this.panel6.Controls.Add(this.radioButton2);
+            this.panel6.Controls.Add(this.radioButton1);
+            this.panel6.Location = new System.Drawing.Point(580, 7);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(552, 220);
+            this.panel6.TabIndex = 14;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(516, 355);
-            this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
+            this.ClientSize = new System.Drawing.Size(1134, 675);
+            this.Controls.Add(this.panel6);
+            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.btnExit);
-            this.Controls.Add(this.btnOptions);
-            this.Controls.Add(this.linkLabel1);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.BtnJugar);
-            this.Controls.Add(this.pictureBox2);
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -235,8 +354,13 @@ namespace Quiz_Game
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -252,10 +376,21 @@ namespace Quiz_Game
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Label lblProgreso;
+        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel6;
     }
 }
 
